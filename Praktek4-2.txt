@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Praktek 2 - Mengubah Warna pada Objek</title>
+    <h1>Praktek 2 - Mengubah Warna pada Objek</h1>
+    <!-- memanggil jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- menggunakan javascript -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".kotak").dblclick(function () {
+            // mengubah objek agar berwarna merah setelah diklik dua kali
+            $(this).css({background:"red"}); });
+        });
+    </script>
+    <style type="text/css">
+        .kotak {
+            background: yellow;
+            float: left;
+            width: 125px;
+            height: 125px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>Klik 2x pada setiap kotak untuk mengubah warnanya</p>
+    <!-- memanggil div -->
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+</body>
+</html>

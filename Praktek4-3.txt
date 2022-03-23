@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Praktek 3 - Menggunakan Efek Fade</title>
+    <h1>Praktek 3 - Menggunakan Efek Fade</h1>
+    <!-- memanggil jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- menggunakan javascript -->
+    <script type="text/javascript">
+        // menuliskan function yang akan dijalankan
+        $(document).ready(function () {
+            // membuat class bernama sembunyikan objek agar berjalan ketika di klik
+            $(".sembunyikanobjek").click(function () {
+                // membuat id ubahobjek menjadi hide
+                $("#ubahobjek").hide();
+            });
+            // membuat class bernama tampilkan objek agar berjalan ketika di klik
+            $(".tampilkanobjek").click(function () {
+                // membuat id ubahobjek menjadi fadeIn
+                $("#ubahobjek").fadeIn();
+            });
+            // membuat perintah bernama fade objek agar berjalan ketika di klik
+            $(".fadeobjek").click(function () {
+                // membuat id ubahobjek menjadi fadeTo 0.3
+                $("#ubahobjek").fadeTo("slow", 0.3);
+            });
+        });
+    </script>
+    <style type="text/css">
+    .objek{
+        height: 100px;
+        width: 150px;
+        background-color: yellow;
+        border: 1px solid black;
+    }
+    div{
+        padding: 20px;
+        margin: 10px;
+    }
+    </style>
+</head>
+<body>
+    <!-- membuat class objek di HTML dan menjelaskan dengan id ubahobjek -->
+    <div class="objek" id="ubahobjek"></div>
+    <!-- button untuk memanggil sembuyikanobjek -->
+    <button class="sembunyikanobjek">Fade Out</button>
+    <!-- button untuk memanggil tampilkan objek -->
+    <button class="tampilkanobjek">Fade In</button>
+    <!-- button untuk memanggil fadeobjek -->
+    <button class="fadeobjek">Fade to 0.3</button>
+</body>
+</html>

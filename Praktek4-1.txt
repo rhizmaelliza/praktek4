@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Praktek 1 - Sembunyikan dan Tampilkan Gambar</title>
+    <h1>Praktek 1 - Sembunyikan dan Tampilkan Gambar</h1>
+    <!-- menggunakan javascript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //membuat perintah sembunyikan dan tampilkan untuk gambar 1
+            $(".Sembunyikan").click(function() {$("#gambar").hide("slow") });
+            $(".Tampilkan").click(function() {$("#gambar").show("slow") });
+        });
+        $(document).ready(function(){
+            //membuat perintah sembunyikan dan tampilkan untuk gambar 2
+            $(".Sembunyikan2").click(function() {$("#gambar2").hide("slow") });
+            $(".Tampilkan2").click(function() {$("#gambar2").show("slow") });
+        });
+
+    </script>
+</head>
+<body>
+    <!-- membuat button sembunyikan dan tampilkan untuk gambar 1 -->
+    <button class="Sembunyikan">Sembunyikan</button>
+    <button class="Tampilkan">Tampilkan</button>
+    <br>
+    <!-- membuat button sembunyikan dan tampilkan untuk gambar 2 -->
+    <button class="Sembunyikan2">Sembunyikan</button>
+    <button class="Tampilkan2">Tampilkan</button>
+    <br>
+    <p><img id="gambar" src="gambar.jpg"></p>
+    <p><img id="gambar2" src="gambar2.jpg"></p>
+</body>
+</html>
