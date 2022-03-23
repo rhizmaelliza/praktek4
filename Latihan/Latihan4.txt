@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("a").click(function(){
+                    alert("selamat datang di website facebook");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <a href="http://facebook.com">Klik di sini untuk membuka website facebook</a>
+    </body>
+</html>
